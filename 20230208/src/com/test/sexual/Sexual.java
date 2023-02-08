@@ -15,6 +15,20 @@ public class Sexual {
 			}
 		}
 		System.out.println("남 : "+gent+" 여 : "+wom);
+	
+		
+		int male=0;
+		int female=0;
+		String[] arr1= {"010102-4","991012-1","960304-1","881012-2","040403-3"};
+		for(int i =0;i<arr1.length;i++) {
+		String gender = arr[i].substring(7);
+		if(gender.equals("1")||gender.equals("3")) {
+			male++;
+		} else if(gender.equals("2")||gender.equals("4")) {
+			female++;
+		}
+		
+		}
+		System.out.println("남 : "+male+"여 : "+female);
 	}
-
 }
